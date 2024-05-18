@@ -1,0 +1,16 @@
+.wrapper {
+  margin-top: 25px;
+  display: grid;
+  padding: 0 20px;
+  grid-template-columns: repeat(auto-fit, 191px);
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.empty {
+  color: var(--color-accent);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0 auto;
+}

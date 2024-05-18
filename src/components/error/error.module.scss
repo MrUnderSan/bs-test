@@ -1,0 +1,12 @@
+.wrapper {
+  color: var(--color-error);
+  font-size: var(--font-size-xl);
+  max-width: 320px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.title {
+  text-decoration: underline;
+}

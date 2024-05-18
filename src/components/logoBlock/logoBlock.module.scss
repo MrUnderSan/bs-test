@@ -1,0 +1,21 @@
+.wrapper {
+  margin-top: 25px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.title {
+  color: var(--color-white);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+}
+
+.logoBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
