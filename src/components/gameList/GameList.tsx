@@ -6,7 +6,7 @@ import { useCustomLazy } from 'src/common/hooks';
 import {
   GAMES_VIEW_INCREMENT_COUNT,
   GAMES_VIEW_START_COUNT,
-} from 'src/common/constants/games-view';
+} from 'src/common/constants/';
 
 export const GameList = () => {
   const status = useSelector(statusSelector);
