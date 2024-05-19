@@ -3,11 +3,19 @@ import { Card } from '../card';
 import { gamesSelector, statusSelector } from 'src/services';
 import { useSelector } from 'react-redux';
 import { useCustomLazy } from 'src/common/hooks';
+import {
+  GAMES_VIEW_INCREMENT_COUNT,
+  GAMES_VIEW_START_COUNT,
+} from 'src/common/constants/games-view';
 
 export const GameList = () => {
   const status = useSelector(statusSelector);
   const games = useSelector(gamesSelector);
-  const lazyGames = useCustomLazy(games, 100, 50);
+  const lazyGames = useCustomLazy(
+    games,
+    GAMES_VIEW_START_COUNT,
+    GAMES_VIEW_INCREMENT_COUNT,
+  );
 
   return (
     <section className={s.wrapper}>
