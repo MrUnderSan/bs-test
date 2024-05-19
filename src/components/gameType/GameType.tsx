@@ -18,9 +18,10 @@ export const GameType = () => {
         name="gameType"
         className={s.select}
         onChange={changeFilterByType}
+        defaultValue={currentGameType}
       >
         {gameTypes.map(t => (
-          <option key={t} value={t} selected={t === currentGameType}>
+          <option key={t} value={t}>
             {t}
           </option>
         ))}
